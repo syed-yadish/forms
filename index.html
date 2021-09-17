@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tamma+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Duck Form</title>
+  </head>
+  <body>
+    <main class="screen">
+      <form class="form" autocomplete="off">
+        <label for="name" class="label">FULL NAME</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input-field"
+          placeholder="Enter your name"
+        />
+
+        <label for="email" class="label">EMAIL</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-field"
+          placeholder="Enter your email"
+          required
+          autofocus
+        />
+
+        <div class="select-wrapper">
+          <label for="select" class="label">MESSAGE REGARDING</label>
+          <i class="fas fa-caret-down select__icon"></i>
+          <select name="ducks" class="select" id="select">
+            <option value="Mallard">Mallard Duck</option>
+            <option value="Domestic">Domestic Duck</option>
+            <option value="Gadwall">Gadwall Duck</option>
+            <option value="Cinnamon-Teal">Cinnamon Duck</option>
+            <option value="Marbled">Marbled Duck</option>
+          </select>
+        </div>
+        <label for="message" class="label">MESSAGE</label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="4"
+          placeholder="Enter your message"
+          class="textarea"
+        >
+        </textarea>
+        <button type="submit" class="button">SEND MESSAGE</button>
+      </form>
+      <div class="rectangle"></div>
+    </main>
+    <div class="image">
+      <img src="images/hiclipart 2.png" alt="duck" />
+    </div>
+  </body>
+</html>
